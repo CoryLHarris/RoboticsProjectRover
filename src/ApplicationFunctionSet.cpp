@@ -66,10 +66,13 @@ void ApplicationFunctionSet::init(unsigned long baudRate) {
     isIrRobotControl = false;
 }
 // ---- settings, tune on the floor ----
-const uint8_t DRIVE_SPEED = 100;
-const uint8_t TURN_SPEED = 80;
+// drive and turn motor speed
+const uint8_t DRIVE_SPEED = 140;
+const uint8_t TURN_SPEED = 150;
+// run time in milliseconds per cm driven
 const unsigned long MS_PER_CM = 40;
-const unsigned long MS_PER_DEGREE = 12;
+// run time in milliseconds per degree turned
+const unsigned long MS_PER_DEGREE = 14;
 const unsigned long MAX_RUN_MS = 5000;
 const unsigned long LOAD_TIMEOUT_MS = 200;
 const uint8_t MAX_STEPS = 8;
